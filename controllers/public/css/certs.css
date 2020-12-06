@@ -1,0 +1,118 @@
+/*                          CERTS SECTION STYLING                    */
+
+.certs {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #001f3f;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+
+.certs .title {
+    position: flex;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.certs .title::before {
+    background: #001f3fd3;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 350px;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.certs .title::after {
+    content: CERTIFICATIONS;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #d4af37d3;
+    padding: 5px;
+    background: #001f3f;
+    transform: translateX(-50%);
+}
+
+.certs .certs-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certs .carousel .card {
+    background: #d4af37d3;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 1.2s ease;
+}
+
+.certs .carousel .card:hover {
+    background: rgba(255, 255, 255, 0.104);
+}
+
+.certs .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.certs .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.certs .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.certs .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #001f3f;
+    transition: all 1.8s ease;
+}
+
+.certs .carousel .card:hover img {
+    border-color: #d4af37d3;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #d4af37d3 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #d4af37d3 !important;
+}

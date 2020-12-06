@@ -1,0 +1,96 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* https://clrs.cc/  */
+/* theme colors */
+/*Navy-Blue =  #001f3fd3 */
+/*Gold =  #d4af37d3  */
+
+
+/* resets margin and padding on layout */
+/* BORDER BACKGROUND */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html body {
+    scroll-behavior: smooth;
+}
+
+
+.max-width {
+    max-height: auto;
+    max-width: auto;
+    padding: 0 2%;
+}
+
+.max-height {
+    max-height: 935px;
+    padding: auto;
+    margin: auto;
+}
+
+section {
+    padding: 20% 0% 0% 0%;
+    margin: -3% 0% 0% 0%;
+    overflow: hidden;
+    display: grid;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 9%;
+    width: 5%;
+    background: none;
+    right: 02%;
+    bottom: 2%;
+    text-align: center;
+    color: #d4af37;
+    font-size: 760%;
+    font-weight: lighter;
+    border-radius: 46%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 2%;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.textStyle {
+    text-transform: uppercase;
+}
+
+.display #clock {
+    display: block;
+    position: fixed;
+    padding-left: 0%;
+    padding-top: 0%;
+    line-height: 0%;
+    color: #d4af37;
+    font-size: 240%;
+    font-weight: 900;
+    background: none;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin-top: 8.2%;
+    margin-left: 6.2%;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.display #clock.sticky {
+    margin: 5%;
+    color: #001f3fd3;
+    transform: rotateZ(360deg) rotateX(360deg);
+    opacity: 1;
+}

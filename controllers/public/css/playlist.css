@@ -1,0 +1,101 @@
+/* Home page */
+
+
+
+.home {
+    display: relative;
+    position: inherit;
+    background: url("/assets/images/playlist.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+    color: #2c85fad3;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: none;
+}
+
+
+.home .max-width {
+    margin: 12%;
+    margin-left: 10%;
+    padding-left: 3%;
+}
+
+.home .home-content .text-1 {
+    margin-top: 3%;
+    margin-left: 37%;
+    font-size: 140%;
+    color: #ff00f7ce;
+    font-weight: 900;
+}
+
+.home .home-content .text-0 {
+    margin-top: 0.5%;
+    margin-left: 32.5%;
+    font-size: 130%;
+    color: #ff00f7ce;
+    font-weight: 900;
+}
+
+.home .home-content .text-2 {
+    font-size: 550%;
+    font-weight: 600;
+    margin-left: 25%;
+    margin-top: -18.7%;
+}
+
+.home .home-content .text-3 {
+    font-size: 220%;
+    margin-left: 42%;
+    margin-top: 3.5%;
+}
+
+.home .home-content .text-3 span {
+    text-align: inherit;
+    font-size: 100%;
+    color: #ff00f7ce;
+    font-weight: 500;
+    margin-left: 2%;
+
+}
+
+
+.home .home-content .text-4 {
+    display: none;
+    font-size: 220%;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.home .home-content .text-4 span {
+    display: none;
+    text-align: inherit;
+    font-size: 100%;
+    color: #ff00f7ce;
+    font-weight: 500;
+    margin-left: 2%;
+
+}
+
+
+
+.home .home-content a {
+    display: inline-block;
+    background: #ff00f765;
+    color: white;
+    font-size: 200%;
+    margin-top: 2%;
+    margin-left: 45%;
+    padding: 12px 12px 12px 12px;
+    border-radius: 12px;
+    border: 3px solid #ff00f73f;
+    transition: 2s ease;
+}
+
+.home .home-content a:hover {
+    background: #2c85fad3;
+    color: #ff00f7ce;
+    border: none;
+}
