@@ -1,0 +1,281 @@
+/*                          playlist-generator SECTION STYLING                    */
+
+
+
+.owl-carousel {
+    transform: rotate(-13deg);
+    overflow: initial;
+}
+
+
+
+.playlist-generator {
+    overflow: visible;
+    font-family: 'Poppins', sans-serif;
+    color: #ff00f7ce;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+    transition: all smooth;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.playlist-generator .title {
+    background-size: cover;
+    font-size: 200px;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 150px;
+    letter-spacing: 15px;
+    margin-left: -1%;
+    width: 63%;
+    z-index: 0;
+    transform: translateX(35%);
+    opacity: 0.5;
+
+}
+
+
+.playlist-generator .title::before {
+    background: #2c85fad3;
+    content: " "#ff00f7ce;
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    left: 50%;
+    width: 350px;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.playlist-generator .title::after {
+    content: Music;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #2c85fad3;
+    padding: 5px;
+    background: #ff00f7ce;
+    transform: translateX(-50%);
+
+}
+
+.playlist-generator .wrapper .title {
+    display: flex;
+    position: absolute;
+    transition: color 1s ease;
+    color: #2c85fad3;
+    background: linear-gradient(45deg, #ff00f723 0%, #2c85fa15 15%, #aae9d162 30%, #2c85fa62 45%, #ff00f744 60%, #2c85fa38 75%, #aae9d13d 90%, #ff00f721 100%);
+    padding-left: 50px;
+    opacity: 1;
+    padding-top: 50px;
+    padding-bottom: 900px;
+    transition: all 2s ease-in-out;
+}
+
+.playlist-generator .wrapper:hover .title {
+    color: #ff00f7ce;
+    background: none;
+    transition: all 1s ease-in;
+    border-top: #ff00f7 solid 80px;
+    transition: all 2s ease-in-out;
+}
+
+.playlist-generator .playlist-generator-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+.playlist-generator .carousel .card {
+    background: none;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    transition: all 1.2s ease;
+    transform: translateY(60%);
+
+}
+
+.playlist-generator .carousel .card:hover {
+    background: rgba(255, 255, 255, 0.104);
+}
+
+.playlist-generator .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.playlist-generator .carousel .card:hover .box {
+    transform: scale(1.5);
+}
+
+.playlist-generator .carousel .card .text {
+    margin-top: 5%;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: -150px;
+    color: #2c85fad3;
+    transition: color 2s ease;
+}
+
+.playlist-generator .carousel .card:hover .text {
+    transform: scale(1) rotate(13deg);
+    color: #ff00f7ce;
+    position: center;
+
+}
+
+.playlist-generator .carousel .card .album {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 3%;
+    margin-left: -270px;
+    transition: color 2s ease;
+    z-index: 99;
+}
+
+.playlist-generator .carousel .card .artist {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 5%;
+    margin-left: -160px;
+    transition: color 2s ease;
+    z-index: 99;
+}
+
+.playlist-generator .carousel .card:hover .album {
+    transform: scale(1.2) rotate(13deg);
+    overflow: visible;
+    color: #2c85fad3;
+    margin-left: -180px;
+    z-index: 99;
+
+}
+
+.playlist-generator .carousel .card:hover .artist {
+    transform: scale(1.2) rotate(13deg);
+    overflow: visible;
+    color: #2c85fad3;
+}
+
+.playlist-generator .carousel .card img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff00f7ce;
+    transition: all 1.8s ease;
+    padding: 50px;
+    margin-left: 300px;
+    transform: rotateZ(13deg) translateY(20%);
+    transition: all .6s ease-in;
+    z-index: 20;
+}
+
+
+.playlist-generator .carousel .card:hover img {
+    transform: rotateZ(360deg) rotate(15deg) scale(1.5) translateY(3%);
+    border-color: #2c85fad3;
+    background: linear-gradient(90deg, #ff00f796 0%, #2c85fa3f 15%, #aae9d186 30%, #2c85fa98 45%, #ff00f796 60%, #2c85fa3f 75%, #aae9d186 90%, #ff00f796 100%);
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.playlist-generator .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: visible;
+    max-width: -100%;
+    max-height: 500px !important;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 50px;
+    transform: rotate(13deg);
+    overflow: hidden !important;
+}
+
+.owl-dot {
+    display: box;
+    height: 20px;
+    width: 50px;
+    margin-top: 200px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #2c85fad3 !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden !important;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px
+}
+
+.owl-nav {
+    overflow: visible;
+    height: 50vh;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #2c85fad3 !important;
+    overflow: hidden !important;
+}
+
+
+.owl-nav button.owl-next {
+    background: none;
+    color: #2c85fad3 !important;
+    border: none;
+    padding: 0 !important;
+    font-size: 1400px !important;
+    transform: translateY(-55%) translateX(-140%) rotate(12deg);
+    z-index: 200;
+    margin: 0;
+    opacity: 0.4;
+    outline: none;
+    transition: all 0.8s ease-in;
+    overflow: hidden !important;
+}
+
+.owl-nav button.owl-prev {
+    background: none;
+    color: #2c85fad3 !important;
+    border: none;
+    padding: 0 !important;
+    font-size: 1400px !important;
+    transform: translateY(-55%) translateX(440%) rotate(0deg);
+    z-index: 200;
+    opacity: 0.4;
+    outline: none;
+    transition: all 1s ease;
+    overflow: hidden !important;
+}
+
+.owl-nav:hover button.owl-next {
+    color: #ff00f7ce !important;
+    opacity: 0.7;
+}
+
+.owl-nav:hover button.owl-prev {
+    color: #ff00f7ce !important;
+    opacity: 0.7;
+}
