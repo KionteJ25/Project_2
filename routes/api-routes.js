@@ -7,16 +7,13 @@ var db = require("../models");
 router.get("/", function(req, res) {
         res.render("index");
     });
+
 router.get("/api/playlist", function(req, res) {
-    db.Search.findAll({}).then(function(data) {
-        // JSON.parse(JSON.stringify(data))
-        var hbsObject = {
-            searches: data
-        };
-        console.log(hbsObject);
-        res.render("playlist", hbsObject);
+        db.Search.findAll({}).then(function(dbSearch) {
+            res.json(dbSearch)
+            res.render('playlist', {result: result});
+        });
     });
-});
 
 router.post("/api/playlist", function(req, res) {
     console.log(req.body);
@@ -27,10 +24,6 @@ router.post("/api/playlist", function(req, res) {
     }).then(function(dbSearch) {
         res.json(dbSearch);
     })
-    // console.log(req.body);
-    // db.Search.create(req.body).then(function(result) {
-    //     res.json({ id: result.insertId });
-    // });
 });
      
 router.put("/api/playlist/:id", function(req, res) {
@@ -51,3 +44,5 @@ router.put("/api/playlist/:id", function(req, res) {
 });
 //Exporting our route for our server
 module.exports = router;
+
+// JSON.parse(JSON.stringify(data))
